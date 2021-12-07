@@ -25,7 +25,7 @@ export const Navbar = () => {
                 <Link to="/auth/login">
                     <div className="header__option"
                     >
-                        log  out
+                        Salir
                     </div>
                 </Link>
             </div>

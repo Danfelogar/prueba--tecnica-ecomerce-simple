@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 
 import logoEcomerce from '../../assets/img/logo-ecomerce.png'
+import { useAuth } from '../../hooks/useAuth';
 
 export const Navbar = () => {
+
+    const { handleClearRegisterUser } = useAuth();
+
     return (
         <div className="header">
             <Link to="/product/list">
@@ -22,12 +26,12 @@ export const Navbar = () => {
                         </span>
                     </div>
                 </Link>
-                <Link to="/auth/login">
-                    <div className="header__option"
+                    <div
+                    onClick={handleClearRegisterUser}
+                    className="header__option"
                     >
                         Salir
                     </div>
-                </Link>
             </div>
         </div>
     )

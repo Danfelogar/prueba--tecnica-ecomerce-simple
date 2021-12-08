@@ -3,7 +3,7 @@ export const ProducList = () => {
     return (
         <div>
             <div className="container text-center">
-                <h1>Product card</h1>
+                <h1>Productos</h1>
             </div>
                 <div className="shell">
                 <div className="container">

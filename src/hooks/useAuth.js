@@ -51,7 +51,7 @@ export const useAuth = () => {
     const handleClearRegisterUser=()=>{
         dispatch(actClearRegisterUser());
         console.log('hola me reinicio en el estado de register');
-            history.push("/auth/login");
+                history.push("/auth/login");
         console.log(localStorage.length)
     }
 
@@ -60,6 +60,8 @@ export const useAuth = () => {
     const  handleGetLoginUser= (userName, lEmail, password,e)=>{
         e.preventDefault();
         dispatch(actGetLoginUser(userName,lEmail, password));
+        history.push("/product/list");
+
     }
 
     useEffect(() => {
@@ -68,21 +70,18 @@ export const useAuth = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    useEffect(() => {
-        if(checking){
-            history.push("/product/list");
-        }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [checking])
+    // useEffect(() => {
+    //     history.push("/product/list");
+    // }, [])
 
 
     //problemas
-    useEffect(() => {
-        if(!checking){
-            history.push("/auth/login");
-        }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    // useEffect(() => {
+    //     if(!checking){
+    //         history.push("/auth/login");
+    //     }
+    // // eslint-disable-next-line react-hooks/exhaustive-deps
+    // }, [])
 
 
     return {

@@ -51,7 +51,7 @@ export const useAuth = () => {
     const handleClearRegisterUser=()=>{
         dispatch(actClearRegisterUser());
         console.log('hola me reinicio en el estado de register');
-        history.push("/auth/login");
+            history.push("/auth/login");
         console.log(localStorage.length)
     }
 
@@ -64,7 +64,7 @@ export const useAuth = () => {
 
     useEffect(() => {
     //para remover todos lo guardado en localStore y redux
-        dispatch(actStateOfLoginUser());
+            dispatch(actStateOfLoginUser());
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
@@ -75,12 +75,14 @@ export const useAuth = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [checking])
 
+
+    //problemas
     useEffect(() => {
         if(!checking){
             history.push("/auth/login");
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [checking])
+    }, [])
 
 
     return {

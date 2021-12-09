@@ -2,10 +2,12 @@ import { Link } from 'react-router-dom';
 
 import logoEcomerce from '../../assets/img/logo-ecomerce.png'
 import { useAuth } from '../../hooks/useAuth';
+import { useProducts } from '../../hooks/useProducts';
 
 export const Navbar = () => {
 
     const { handleClearRegisterUser } = useAuth();
+    const { basketProducts } = useProducts();
 
     return (
         <div className="header">
@@ -22,7 +24,7 @@ export const Navbar = () => {
                     <div className="header__optionBasket">
                         <i className="fas fa-shopping-basket"></i>
                         <span className="header__optionLineTwo header__basketCount">
-                        {0}
+                        {basketProducts.length}
                         </span>
                     </div>
                 </Link>

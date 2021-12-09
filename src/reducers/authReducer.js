@@ -3,7 +3,7 @@ import { types } from '../types/types';
 const initialState = {
     username: [],
     key: [],
-    checking: [],
+    checking: false,
     register: false,
 }
 

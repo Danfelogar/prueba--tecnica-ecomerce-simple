@@ -361,8 +361,23 @@ aside {
     width: 33%;
   }
   .quantity {
+    display: flex;
+    flex-direction: row;
     text-align: center;
     width: 34%;
+  }
+  .quantity  button{
+    width: 20px;
+    height: 25px;
+    margin: 0 10px;
+    border-radius: 7px;
+    font-size: 23px;
+  }
+  .plus{
+    background-color: #51d657;
+  }
+  .less{
+    background-color: #ed6444;
   }
   .quantity-field {
     float: none;

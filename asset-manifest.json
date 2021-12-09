@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/prueba--tecnica-ecomerce-simple/static/css/main.eee6f7c0.chunk.css",
+    "main.js": "/prueba--tecnica-ecomerce-simple/static/js/main.b36259a1.chunk.js",
+    "main.js.map": "/prueba--tecnica-ecomerce-simple/static/js/main.b36259a1.chunk.js.map",
+    "runtime-main.js": "/prueba--tecnica-ecomerce-simple/static/js/runtime-main.df3af3fc.js",
+    "runtime-main.js.map": "/prueba--tecnica-ecomerce-simple/static/js/runtime-main.df3af3fc.js.map",
+    "static/js/2.93506b63.chunk.js": "/prueba--tecnica-ecomerce-simple/static/js/2.93506b63.chunk.js",
+    "static/js/2.93506b63.chunk.js.map": "/prueba--tecnica-ecomerce-simple/static/js/2.93506b63.chunk.js.map",
+    "index.html": "/prueba--tecnica-ecomerce-simple/index.html",
+    "static/css/main.eee6f7c0.chunk.css.map": "/prueba--tecnica-ecomerce-simple/static/css/main.eee6f7c0.chunk.css.map",
+    "static/js/2.93506b63.chunk.js.LICENSE.txt": "/prueba--tecnica-ecomerce-simple/static/js/2.93506b63.chunk.js.LICENSE.txt",
+    "static/media/logo-ecomerce.32b269d1.png": "/prueba--tecnica-ecomerce-simple/static/media/logo-ecomerce.32b269d1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df3af3fc.js",
+    "static/js/2.93506b63.chunk.js",
+    "static/css/main.eee6f7c0.chunk.css",
+    "static/js/main.b36259a1.chunk.js"
+  ]
+}
